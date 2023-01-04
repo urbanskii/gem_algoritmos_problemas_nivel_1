@@ -1,4 +1,4 @@
-require_relative 'BubbleSort'
+require "BubbleSort"
 
 describe BubbleSort do
   describe ".sort" do

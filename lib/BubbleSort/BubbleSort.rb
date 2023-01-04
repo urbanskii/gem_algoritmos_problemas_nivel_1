@@ -22,18 +22,21 @@ p arr
 =end
 
 class BubbleSort
-  def self.sort(array)
-    n = array.size
+
+  def sort(array)
     loop do
       swapped = false
-      (n-1).times do |i|
-        if array[i] > array[i+1]
-          array[i], array[i+1] = array[i+1], array[i]
+
+      (array.length - 1).times do |i|
+        if array[i] > array[i + 1]
+          array[i], array[i + 1] = array[i + 1], array[i]
           swapped = true
         end
       end
-      break if not swapped
+
+      break unless swapped
     end
+
     array
   end
 end

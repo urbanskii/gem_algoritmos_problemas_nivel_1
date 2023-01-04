@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require "algoritmos_problemas_nivel_1"
 require "BubbleSort"
 
 RSpec.configure do |config|
